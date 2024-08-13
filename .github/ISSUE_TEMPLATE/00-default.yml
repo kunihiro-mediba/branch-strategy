@@ -1,0 +1,50 @@
+name: テンプレート名
+description: テンプレートの説明
+title: "[Issue] "
+labels: []
+projects: ["kunihiro-mediba/1"]
+assignees:
+  - kunihiro-mediba
+body:
+  - id: description
+    type: textarea
+    attributes:
+      label: 概要
+      description: Issueの説明
+      placeholder: ""
+    validations:
+      required: true
+  - id: goal
+    type: input
+    attributes:
+      label: 完了条件
+      description: Issueが完了したと見なすための具体的な条件
+      placeholder: ◯◯していること
+    validations:
+      required: false
+  - id: tasks
+    type: textarea
+    attributes:
+      label: タスク詳細
+      description: Issueを完了するために必要なタスク
+      value: |
+        - [ ] タスク1
+        - [ ] タスク2
+        - [ ] タスク3
+    validations:
+      required: false
+  - id: conditions
+    type: textarea
+    attributes:
+      label: 前提条件
+      description: Issueを開始するための条件
+  - id: dependencies
+    type: textarea
+    attributes:
+      label: 関連情報
+      description: 関連するIssueやPR
+  - id: appendix
+    type: textarea
+    attributes:
+      label: その他
+      description: その他の注意事項や補足情報
